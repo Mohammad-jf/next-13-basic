@@ -14,3 +14,10 @@ export async function GET(req) {
 
     return NextResponse.json(filterdData)
 }
+
+
+export async function POST(req) {
+    const body = await req.json();
+    console.log(body)
+    return NextResponse.json("hi")
+}
